@@ -2,9 +2,9 @@ title: eunlog
 url: https://Soeun-Jang.github.io
 logo: /assets/img/logo.jpg
 email: azulcielo_@naver.com
-description: about develop.
+description: 알아두면 쓸데있는 개발 기록장 
 favicon: true
-color-scheme: auto
+color-scheme: light
 
 plugins:
   - jekyll-sitemap
