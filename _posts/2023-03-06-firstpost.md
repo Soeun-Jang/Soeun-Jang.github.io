@@ -34,6 +34,8 @@ author: Soeun-Jang
 <git blog를 맥 vscode로 구현 - 에러 해결 >
 1. Jekyll다운을 받기 위해  행동 : gem install bundler 명령어 입력결과 : ERROR:  While executing gem ... (Gem::FilePermissionError)You don't have write permissions for the /Library/Ruby/Gems/2.6.0 directory.원인 : MacOS 시스템이 ruby를 사용하고 있기 때문에 권한 문제로 발생한 에러 메세지해결 : system ruby가 아닌 rbenv 설치하면 해결! 
 2. rbenv설치 하려고 brew update 입력 시 에러행동 : brew update 명령어 입력결과 : -bash: brew: command not found원인 : m1,m2의 기본 설치 경로가 기존 인텔맥과 달라서 발생함 (환경변수) 해결 : zshrc안에 brew 경로가 향하도록 명령어 입력해줌         vi ~/.zshrc -> i를 누르고 (insert) -> brew가 설치되어 있는 경로 입력 (export HOME_BREW = "/opt/homebrew/bin") -> esc눌러 insert 끄고 :w (저장) -> 터미널 끄고 다시 터미널 재접속 -> source ~/.zshrc (이 컴퓨터에서 zshrc라는 파일 경로를 추가할게~~) -> brew (어 되네~~) -> 행복한 개발 공부 시작~~
+3. 첫 게시글을 post하고 push하였는데 깃 블로그에 적용되지 않았다.검색해보니 그 때도 루트 디렉토리로 들어간 후 bundle exec jekyll serve로 서버를 켜주고 나니     Regenerating: 1 file(s) changed at 2023-03-07 09:12:43
+_posts/2023-03-06-firstpost.md      이렇게 저장이 된 걸 확인할 수 있었다! 
 
 
 <Homebrew delete>
